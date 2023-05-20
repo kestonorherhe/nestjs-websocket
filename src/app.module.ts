@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import * as Joi from '@hapi/joi';
 import { DatabaseModule } from './database/database.module';
 import { MessagesModule } from './message/message.module';
+import { Messages2Module } from './message2/message2.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { MessagesModule } from './message/message.module';
     }),
     DatabaseModule,
     MessagesModule,
+    Messages2Module,
   ],
   controllers: [AppController],
   providers: [AppService],
